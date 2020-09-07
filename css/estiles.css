@@ -1,0 +1,117 @@
+/*fonts*/
+@font-face {
+    font-family: OratorStd;
+    src: url(../fonts/OratorStd.otf);
+  }
+  @font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  }
+
+  h1,h2,h3 {
+      font-family: OratorStd;
+  }
+ /*General*/
+ body {
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+ } 
+ img {
+    max-width: 100%;
+}
+/*botones*/
+.btn-primary {
+    background-color: #ee7656;
+    border-color: #ee7656;
+}
+.btn-primary:hover {
+    background-color: #F9C5AF;
+    border-color: #F9C5AF;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: #EE7656;
+    border-color: #EE7656;
+}
+.btn-outline-success {
+    color: #F9C5AF;
+    border-color: #F9C5AF;
+}
+.btn-outline-primary {
+    color: #ee7656;
+    border-color: #ee7656;
+}
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #ee7656;
+    border-color: #ee7656;
+}
+
+/*Header*/
+.pw-fixed nav {
+    background: rgb(0 57 89 / 78%);
+    transition: 0.5s;
+}
+.btn-outline-success:hover {
+    background: #ee7656;
+    border: 1px solid #ee7656;
+}
+/*tecnologia*/
+.tecnologia {
+    background: url(../images/tecnologia.jpg);
+    background-size: cover;
+}
+img.rotar:hover {
+    transform: scale(1.1);
+}
+img.rotar {
+    transform: rotate(29deg);
+    max-width: 250px;
+    width: 112px;
+    transition: 0.5s;
+    float: right;
+}
+.tecnologia h2 {
+    color: #ee7656;
+}
+
+/*marketing*/
+.bloques {
+    padding: 8rem 0;
+    background: #f8f8f6;
+}
+
+/*Footer*/
+footer {
+    background: #003959;
+    color: #ffffff;
+    padding: 5rem 0;
+    display: block;
+}
+
+
+
+
+/*Responsive*/
+@media (max-width: 480px) {
+    .h1, h1 {
+      font-size: 1.5rem;
+    }
+    .tecnologia {
+      padding: 5em 0;
+    }
+    img.rotar {
+      max-width: 90px;
+      width: 90px;
+      float: none;
+      margin: 0 auto;
+      text-align: center;
+      margin-left: 35%;
+    }
+    div#navbarCollapse {
+        padding: 1.5em;
+        transition: 0.3s;
+    }
+    nav.navbar.navbar-expand-md.navbar-dark.fixed-top {
+        background: rgb(0 57 89 / 78%);
+        transition: 0.5s;
+    }
+  }
